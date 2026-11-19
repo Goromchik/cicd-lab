@@ -21,4 +21,3 @@ def test_add_route():
     response = client.get("/add/4/6")
     assert response.status_code == 200
     assert response.get_json()["sum"] == 10
-    
